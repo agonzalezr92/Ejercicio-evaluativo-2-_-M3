@@ -1,3 +1,9 @@
+##Integrantes: 
+Arlenis González R.
+Ambar Zambrano
+Karen Limari
+
+
 ## Uso
 
 1. Clona este repositorio o descarga el archivo `fuerza_bruta.py`.
