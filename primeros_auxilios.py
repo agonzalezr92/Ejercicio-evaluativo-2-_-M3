@@ -1,20 +1,43 @@
-#- Primeros auxilios
-#En cualquier momento puede haber una emergencia y hay que estar preparados ¿sabrías
-#cómo reaccionar en caso de que alguien necesite de primeros auxilios?
-#Es muy probable que mucha gente no conozca cuáles son los pasos a seguir en caso de emergencia. Es por eso que se le solicita construir una aplicación que permita indicar los
-#pasos a seguir ante una emergencia. Debido a que no se espera que usted sea un experto en el tema se le provee de un diagrama que explica las distintas instancias a la que se está
-#sometido durante una emergencia.
+# Preguntas para evaluar si una persona necesita asistencia medica.
+print("Hay Alguien Herido?")
+print("Por favor, responde exactamente 'si' o 'no' a las preguntas para recibir instrucciones.")
 
-#Primero defino la varibale de la pregunta si responde a estímulos o no
-responde_a_estimulos = input("¿El paciente responde a estímulos? Responda si o no: ")
-if responde_a_estimulos == "si":
-    print("Valorar la necesidad de llevarlo al hospital más cercano")
-elif responde_a_estimulos == "no":
-    print("Abrir la vía aérea")
+respuesta = input("¿Responde a estímulos? (si/no): ")
 
-#Variable para saber que hacer si el paciente respira o no
-respira = input("¿El paciente respira? Responda si o no: ")
-if respira == "si":
-    print("Permitirle posición de suficiente respiración")
-elif respira == "no":
-    print("Administrar 5 ventilaciones y llamar a Ambulancia")
+if respuesta == "si":
+    print("Evalua si existe la necesidad de llevarlo al hospital más cercano.")
+else:
+    print("Abrir la vía aérea.")
+    respuesta = input("¿Respira? (si/no): ")
+    if respuesta == "si":
+        print("Permitirle posición de suficiente ventilación.")
+    else:
+        print("Administrar 5 ventilaciones y llamar a ambulancia.")
+        respuesta = input("¿Hay signos de vida? (si/no): ")
+        if respuesta == "si":
+            print("Reevaluar a la espera de la ambulancia.")
+        else: 
+            print("Administrar compresiones torácicas hasta que llegue la ambulancia.")    
+            ambulancia = input("¿Llego la ambulancia? (si/no): ")
+            
+        while ambulancia == "no":
+                respuesta = input("¿Hay signos de vida? (si/no): ")
+                if respuesta == "si":
+                  print("Reevaluar a la espera de la ambulancia.")
+                else: 
+                  print("Administrar compresiones torácicas hasta que llegue la ambulancia.")    
+                ambulancia = input("¿Llegó la ambulancia? (si/no): ")
+        print("Paciente camino al hospital.")
+
+
+                
+
+
+       
+
+
+
+
+
+
+#fin
