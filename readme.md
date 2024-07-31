@@ -1,6 +1,6 @@
 ##Integrantes: 
-Arlenis González R.
-Ambar Zambrano
+Arlenis González R.;
+Ambar Zambrano;
 Karen Limari
 
 
