@@ -8,9 +8,13 @@
 #Primero defino la varibale de la pregunta si responde a estímulos o no
 responde_a_estimulos = input("¿El paciente responde a estímulos? Responda si o no: ")
 if responde_a_estimulos == "si":
-    print("Valorar la necesidad de llevarloal hospital más cercano")
+    print("Valorar la necesidad de llevarlo al hospital más cercano")
 elif responde_a_estimulos == "no":
     print("Abrir la vía aérea")
 
 #Variable para saber que hacer si el paciente respira o no
 respira = input("¿El paciente respira? Responda si o no: ")
+if respira == "si":
+    print("Permitirle posición de suficiente respiración")
+elif respira == "no":
+    print("Administrar 5 ventilaciones y llamar a Ambulancia")
